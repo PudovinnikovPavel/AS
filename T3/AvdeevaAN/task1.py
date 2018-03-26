@@ -27,4 +27,5 @@ def test(size):
     sort(arr);
     print("--- %s seconds ---" % (time.time() - start_time))
 
+# 934sec
 test(100000)
