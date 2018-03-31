@@ -1,0 +1,18 @@
+def func(a,b,c):
+	if c=='+':
+		res=a+b
+	elif c=='-':
+		res=a-b
+	elif c=='*':
+		res=a*b
+	elif c=='/':
+		res=a/b
+	else
+		res="Error"
+	return res
+
+a=float(input("Enter a: "))
+b=float(input("Enter b: "))
+c=input("Enter c: ")
+res = func(a,b,c)
+print(res)
