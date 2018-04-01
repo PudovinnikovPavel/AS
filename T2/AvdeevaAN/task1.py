@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+def isSimple(n):
+    i = 2
+    while (i*i) <= n:
+        if (n % i) == 0:
+            return False
+        i = i + 1
+    return True
+
+print "Input number (0-1000): "
+d = int(input())
+if isSimple(d) == True:
+    print "Simple number"
+else:
+    print "Number is not simple"
