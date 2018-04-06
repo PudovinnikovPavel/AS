@@ -1,0 +1,73 @@
+#include <iostream>
+#include <stack>
+#include <string>
+
+int main()
+{
+	std::stack <int> Q;
+	std::string str;
+	std::cout << "Enter:" << std::endl;
+	std::getline(std::cin, str);
+	int i=0,j,a,b,res;
+	char sint[4];
+	while (i<str.size())
+	{
+		if (str[i]=='+') 
+		{
+			b = Q.top();
+			Q.pop();
+			a = Q.top();
+			Q.pop();
+			res=a+b;
+			Q.push(res);
+		}
+		else if (str[i]=='-') 
+		{
+			b = Q.top();
+			Q.pop();
+			a = Q.top();
+			Q.pop();
+			res=a-b;
+			Q.push(res);
+		}
+		else if (str[i]=='*') 
+		{
+			b = Q.top();
+			Q.pop();
+			a = Q.top();
+			Q.pop();
+			res=a*b;
+			Q.push(res);
+		}
+		else if (str[i]=='/') 
+		{
+			b = Q.top();
+			Q.pop();
+			a = Q.top();
+			Q.pop();
+			res=int(a/b);
+			Q.push(res);
+		}
+		else if (str[i]!=' ')
+		{
+			for(j=0;j<4;j++) sint[j]='a';
+			j=0;
+			while ((str[i]!=' ')&&(i<str.size()))
+			{
+				sint[j]=str[i];
+				j++;
+				i++;
+			}
+			a = atoi(sint);
+			Q.push(a);
+		}
+		i++;
+	}
+	res = Q.top();
+	Q.pop();
+	if (Q.empty())
+	std::cout << "Res : "<< res << std::endl;
+	else
+	std::cout << "Error input!" << std::endl;
+	return 0;
+}
