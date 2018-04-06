@@ -1,0 +1,27 @@
+#include <iostream>
+#include <queue>
+
+int main()
+{
+	int i;
+	std::queue <int> Q1, Q2;
+	int arr[10];
+	for(i=0;i<10;i++)
+	{
+		arr[i] = i;
+	}
+	for(i=0;i<10;i++)
+	{
+		if (i%2==1)
+		{
+			Q2.push(arr[i]);
+		}
+		else
+		{
+			Q1.push(arr[i]);
+		}
+	}
+	std::cout << "Q1: "<< Q1.front() << " " << Q1.back() << std::endl;
+	std::cout << "Q2: "<< Q2.front() << " " << Q2.back() << std::endl;
+	return 0;
+}
