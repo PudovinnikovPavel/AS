@@ -3,7 +3,7 @@
 #include <array>
 #include <chrono>
 
-void ISort(std::array<char, 50000>& arr)
+void insertionSort(std::array<char, 50000>& arr)
 {
 	int key,j;
 	for (int i = 1; i < 50000; i++) {
@@ -24,7 +24,7 @@ int main()
 	std::array<char, N> arr;
 	for (int i = 0; i < N; i++) arr[i] = rand();
 	auto start = std::chrono::high_resolution_clock::now();
-	ISort(arr);
+	insertionSort(arr);
 	auto finish = std::chrono::high_resolution_clock::now();
 	std::cout << "Sorted array is:\n";
 	//for (int i = 0; i < N; i++) std::cout << arr[i] << "\n";
