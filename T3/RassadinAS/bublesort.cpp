@@ -9,7 +9,7 @@ void swap(int *xp, int *yp)
 	*yp=temp;
 }
 
-void bubbleSort(int arr[],int n)
+void bSort(int arr[],int n)
 {
 	int i,j;
 	for (i=0;i<n;i++) 
@@ -28,7 +28,7 @@ int main()
 	int arr[N]={};
 	for (int i=0;i<N;i++) arr[i]=rand();
 	auto start = std::chrono::high_resolution_clock::now();
-	bubbleSort(arr,N);
+	bSort(arr,N);
 	auto finish = std::chrono::high_resolution_clock::now();
 	std::cout << "Sorted array is:\n";
 	//for (int i = 0; i < N; i++) std::cout << arr[i] << "\n";
