@@ -1,7 +1,8 @@
+import random
 N = int (input("Количество элементов в списке: "))
 x = [1] * N
 for i in range(N):
-	x[i] = int(input("Элемент:"))
+	x[i] = random.uniform(0, 1000)
 print(x)
 a = 1 
 y=len(x)
