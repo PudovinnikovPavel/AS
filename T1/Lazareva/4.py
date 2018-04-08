@@ -1,7 +1,7 @@
-s = input()
-l = s.split()
-s1 = ''
+x = input()
+y = x.split()
+x1 = ''
 for i in l:
-	s1 += i + '*'
-s1 = s1[:-1] # удаляем последнюю "*"	
-print(s1)
+	x1 += i + '*'
+x1 = x1[:-1] 
+print(x1)
