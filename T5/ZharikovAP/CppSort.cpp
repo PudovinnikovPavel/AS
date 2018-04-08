@@ -12,7 +12,6 @@ int main()
 	for (int i = 0; i < arr.size(); i++) {
 		std::cout <<"arr["<<i<<"] = "<<arr[i]<<"\n";
 	}
-	std::cout << "_______________________________________________\n\n";
 	radixSort(arr);
 
 	for (int i = 0; i < arr.size(); i++) {
