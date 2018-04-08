@@ -1,0 +1,118 @@
+#include <iostream>
+#include <array>
+
+void firstArray(std::array<int,10>& arr);
+void secondArray(int *array);
+void thirdArray(int array[10]);
+void rangeBasedFor(std::array<int,10>& array);
+
+
+int main()
+{
+    
+    //1
+    //std::array<int, 10> arr;
+    //firstArray(arr);
+    
+    //2
+    //int *array=new int[10];
+    //secondArray(array);
+    
+    //3
+    //int arr[10];
+    //thirdArray(arr);
+    
+    //rangeBasedFor
+    std::array<int, 10> arr;
+    rangeBasedFor(arr);
+    
+   
+    return 0;
+                              
+}
+
+/*void firstArray(std::array<int,10>& arr){
+    
+     for(size_t i=0;i<10;i++){
+                 arr[i]=i;
+        std::cout << "Value of " << i << " element is " << arr[i] << std::endl;
+
+    }
+}
+
+void secondArray(int *array){
+    
+    for (size_t i = 0; i <10; i++) {
+        array[i] = i;
+        std::cout << "Value of " << i << " element is " << array[i] << std::endl;
+    }
+}
+
+void thirdArray(int array[10]){
+    
+    for (size_t i = 0; i <10; i++) {
+        array[i] = i;
+        std::cout << "Value of " << i << " element is " << array[i] << std::endl;
+    }
+}
+*/
+
+void firstArray(std::array<size_t,10>& arr)
+{  
+     for(size_t i=0;i<10;i++){
+                 arr[i]=i;
+        }
+        
+    for(size_t i=0;i<10;i++){
+        if(i%2==0)
+        arr[i]=arr[i]*2;
+        else        
+        arr[i]=arr[i]-1;
+        std::cout << "Value of " << i << " element is " << arr[i] << std::endl;
+
+    }
+}
+
+void secondArray(int *array){
+    
+    for (size_t i = 0; i <10; i++) {
+        array[i] = i;
+    }
+     for(size_t i=0;i<10;i++){
+        if(i%2==0)
+        array[i]=array[i]*2;
+        else        
+        array[i]=array[i]-1;
+        std::cout << "Value of " << i << " element is " << array[i] << std::endl;
+
+    }
+}
+
+void thirdArray(int array[10]){
+    
+    for (size_t i = 0; i <10; i++) {
+        array[i] = i;
+    }
+     for(size_t i=0;i<10;i++){
+        if(i%2==0)
+        array[i]=array[i]*2;
+        else        
+        array[i]=array[i]-1;
+        std::cout << "Value of " << i << " element is " << array[i] << std::endl;
+
+    }
+}
+
+void rangeBasedFor(std::array<int,10>& array){
+    
+    for (size_t i = 0; i <10; i++) {
+        array[i] = i;
+    }
+     for(auto arr:array){
+        
+        arr=arr*2;
+       
+        std::cout << "Value of element is " << arr << std::endl;
+
+    }
+}
