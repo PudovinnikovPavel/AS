@@ -1,0 +1,6 @@
++d = float(input("enter diameter: "))
++h = float(input("enter height: "))
++s = float(input("enter area of one can: "))
++a = 2*3.14*(d/2)*(2*h+(d/2))
++res = int((m/s)+1)
++print('we need',res,'cans of paint')

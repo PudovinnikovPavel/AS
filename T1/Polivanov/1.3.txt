@@ -1,0 +1,8 @@
+  a = int(input("Enter number: "))
+  b=0
+  while a != 0:
+	res = a % 10;
+	a = b // 10;
+	b = b * 10;
+	b = b + res;
+   print('inverse number:', b)
