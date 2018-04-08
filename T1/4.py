@@ -1,7 +1,0 @@
-s = input()
-l = s.split()
-s1 = ''
-for i in l:
-	s1 += i + '*'
-s1 = s1[:-1] # удаляем последнюю "*"	
-print(s1)
