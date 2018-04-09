@@ -16,8 +16,8 @@ int main() {
 		q.pop();
 
 	}
-	std::cout << "1 четный элемент: " << a.front() << "последний четный элемент: " << a.back()
-		<< "1 нечетный элемент: " << b.front() 
-		<< "последний нечетный элемент: " << b.back();
+	std::cout << "1 chetniy element: " << a.front() << "posledniy chetniy element: " << a.back()
+		<< "1 nechetniy element: " << b.front() 
+		<< "posledniy nechetniy element: " << b.back();
 	return 0;
 }
