@@ -6,11 +6,11 @@ using namespace std;
 int main()
 {
     int d;
-    printf("Введите десятичное число: ");
+    printf("vvedi desyatichnoe chislo: ");
     scanf("%d", &d);
     if(!d)
     {
-        printf("Двоичное число: 0\n");
+        printf("dvoichnoe chislo: 0\n");
         return 0;
     }
 
@@ -21,7 +21,7 @@ int main()
         d /= 2;
     }
 
-    printf("Двоичное число: ");
+    printf("dvoichnoe: ");
     while(!s.empty())
     {
         printf("%c", s.top());
