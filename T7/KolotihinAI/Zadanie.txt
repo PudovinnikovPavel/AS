@@ -20,13 +20,13 @@ int main(void)
 			q2.push(i);
 		}
 	}
-	cout<<"Первый элемент очереди с четными цифрами:  ";
+	cout<<"perviy element s chetnimi ciframi:  ";
 	cout<<q2.front()<<"\n";
-	cout<<"Последний элемент очереди с четными цифрами:";
+	cout<<"posledniy element s chetnimi ciframi:";
 	cout<<q2.back()<<"\n\n";
-	cout<<"Первый элемент очереди с нечетными цифрами:  ";
+	cout<<"perviy element s nechetnimi ciframi:  ";
 	cout<<q1.front()<<"\n";
-	cout<<"Последний элемент очереди с нечетными цифрами: ";
+	cout<<"posledniy element s nechetnimi ciframi: ";
 	cout<<q1.back()<<"\n";
 	return 0;
 }
