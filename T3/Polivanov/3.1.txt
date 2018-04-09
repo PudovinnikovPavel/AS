@@ -1,0 +1,37 @@
+#include <iostream.h>
+#include <stdlib.h>
+
+void my_sort(int *m, int n)
+{
+	int key = 0, j = 0;
+	for (int i = 1; i < n; i++)
+	{
+		key = m[i];
+		j = i - 1;
+		while (j >= 0 && m[j] > key)
+		{
+			m[j + 1] = m[j];
+			j--;
+		}
+		m[j + 1] = key;
+	}
+	return;      }
+
+int main()      {
+	 int n,i;
+	 int *arr
+	 std::cout<<"Enter n: ";
+	 std::cin>> n;
+	  arr = new int[n];
+	 for(i=0;i<n;i++)
+	 { 
+		std::cout<<"\nEnter arr["<<i<<"]: ";
+		std::cin>> arr[i];
+	}
+	my_sort(arr,n);
+	     std::cout<<"\n Sort arr: "<< std::endl;
+	for(i=0;i<n;i++)
+	{
+		std::cout<<arr[i]<<" ";
+	}
+	return 0;  }
