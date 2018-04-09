@@ -1,31 +1,30 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "УПРАЖНЕНИЕ2(с)", "УПРАЖНЕНИЕ2(с)\УПРАЖНЕНИЕ2(с).vcxproj", "{DA218301-79CB-43C6-95D9-62B7B4A1E07A}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Debug|x64.ActiveCfg = Debug|x64
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Debug|x64.Build.0 = Debug|x64
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Debug|x86.ActiveCfg = Debug|Win32
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Debug|x86.Build.0 = Debug|Win32
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Release|x64.ActiveCfg = Release|x64
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Release|x64.Build.0 = Release|x64
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Release|x86.ActiveCfg = Release|Win32
-		{DA218301-79CB-43C6-95D9-62B7B4A1E07A}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {110FFEB7-9329-4DD4-BCE4-022331C7F520}
-	EndGlobalSection
-EndGlobal
+#include "stdafx.h"
+#include <iostream>
+#include <array>
+using namespace std;
+const int N = 10;
+const int a[N] = { 1,2,3,4,5,6,7,8,9,10 };
+void func(const int *a) {
+	int i;
+	for (i = 0; i < N; i++)
+	 {
+		if ((a[i] % 2) == 0)
+			 cout << a[i] * 2 << ' ';
+		else
+		 cout << a[i] - 1 << ' ';
+		}
+	cout << endl;
+	}
+
+int main()
+{
+	int i;
+	cout << "Введите массив:" << endl;
+	for (i = 0; i < N; i++)
+		 cout << a[i] << ' ';
+	cout << endl;
+	cout << "Изменения:" << endl;
+	func(a);
+	system("pause");
+	return 0;
+}
