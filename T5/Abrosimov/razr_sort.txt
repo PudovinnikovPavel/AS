@@ -1,0 +1,45 @@
+#include <iostream> 
+#include <stdlib.h> 
+#include <conio.h> 
+#include <math.h> 
+#include <vector> 
+
+using namespace std; 
+
+void radixSort(int first,int last){ 
+const int Q = 5; 
+int powerOfTen = 1; 
+for (int place = 0; place < Q; ++place){ 
+vector<vector<int> > buckets(10); 
+for (it=first;it!=last;++it){ 
+buckets[((*it)/powerOfTen)%10].push_back(*it); 
+} 
+FDIter copyBack = first; 
+for (int i = 0; i < 10; ++i){ 
+copyBack=copy(buckets[i].begin(),buckets[i].end(),copyBack); 
+} 
+powerOfTen*=10; 
+} 
+} 
+
+int main(){ 
+int n=90,i; 
+float a=0.5,b=17.1; 
+
+float arr[n]; 
+
+for(i=0;i<n;i++){ 
+arr[i]=a+(b-a)*(double)rand()/(double)RAND_MAX; 
+} 
+cout<<"Res: \n"; 
+for(i=0;i<n;i++){ 
+cout<<arr[i]<<" "; 
+} 
+radixSort(arr, arr+n); 
+cout<<"\nSort: \n"; 
+for(i=0;i<n;i++){ 
+cout<<arr[i]<<" "; 
+} 
+ 
+return 0; 
+} 

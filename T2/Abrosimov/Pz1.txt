@@ -1,0 +1,9 @@
+z = input("Enters: ").split()
+i = 0
+while i<len(z):
+	if int(z[i])<0:
+		z.pop(i)
+	else:
+		i = i + 1
+res = int(z[0])*int(z[2])*int(z[5])
+print(res)

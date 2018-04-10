@@ -1,0 +1,17 @@
+def is_prime(z):
+	s = 0
+	i = 2
+	while i!=z:
+		if i==z:
+			i=i+1
+		if z%i==0:
+			s=s+1
+		i=i+1
+	return s
+
+z = int(input("Your int: "))
+res = is_prime(z)
+if res==0:
+	print("TRUE")
+else:
+	print("FALSE")

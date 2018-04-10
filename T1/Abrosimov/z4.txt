@@ -1,0 +1,5 @@
+q = int(input("enter numb: "))
+a = list(str(q))
+a.reverse()
+for i in a:
+	print(i,end = "") 

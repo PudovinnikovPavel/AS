@@ -1,0 +1,37 @@
+def my_empty():
+	global Q
+	res = False
+	if len(Q)==0:
+	res = True
+	return res
+
+def my_push(a):
+	global Q
+	Q.append(a)
+
+def my_pop():
+	global Q
+	res = Q[-1]
+	Q.pop()
+	return res
+
+def my_size():
+	global Q
+	res = len(Q)
+	return res
+
+Q = list()
+a = input("Enter: ")
+b = input("Enter: ")
+my_push(a)
+print (Q)
+my_push(b)
+print (Q)
+w = my_size()
+print (w)
+w = my_pop()
+print(w)
+my_pop()
+w = my_empty()
+print(w)
+print(Q)
