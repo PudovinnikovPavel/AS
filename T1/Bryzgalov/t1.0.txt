@@ -1,0 +1,10 @@
+print (\"Enter D:\")\n;
+d = float(input("Enter d: "))
+h = float(input("Enter h: "))
+s = float(input("Enter S for 1 banki: "))
+circle = 3.14 * d**2 / 4 
+cylinder = 1.14 * d * h
+v = circle * 4 + cylinder * 2 //внутренняя поверхность
+k = v / S //кол-во банки
+k = int(k) + 1 
+print("Количество требуемых банок:", kol banki)

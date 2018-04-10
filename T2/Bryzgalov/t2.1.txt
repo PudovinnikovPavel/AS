@@ -1,0 +1,33 @@
+def prime(n):
+    
+i= 2
+   
+ while i < n:
+       
+ if n % i != 0:
+          
+  i +=1
+            
+continue 
+      
+  else:
+         
+   return False 
+    
+return True
+ 
+prime_n = []       
+ 
+for i in range(1,1000):
+    
+if prime(i) == True :
+       
+ prime_n.append(i)
+   
+ else:
+       
+ continue 
+       
+ 
+print (prime_n)
+     
