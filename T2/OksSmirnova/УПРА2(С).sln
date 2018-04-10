@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include <array>
+#include <vector>
+using namespace std;
+const int N = 10;
+array <int, N> a{};
+void func(std::array<int, N> &a)
+{
+	int x[N] = { 0,1,2,3,4,5,6,7,8,9 };
+	for (int i : x) 
+	 {
+		a[i] *= 2;
+		cout << a[i] << ' ';
+		}
+	cout << endl;
+	}
+
+int main()
+ {
+	int i;
+	cout << "Введите массив:" << endl;
+	for (i = 0; i < N; i++)
+		 cin >> a[i];
+	cout << "Изменения:" << endl;
+	func(a);
+	system("pause");
+	return 0;
+}
+
