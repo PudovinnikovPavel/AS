@@ -1,0 +1,8 @@
+v = input("vvedite integers: ").split()
+w = set(v)
+n = len(w)
+m = len(v)
+if n==m:
+	print('Nabor unicalen')
+else:
+	print('Nabor ne unicalen')

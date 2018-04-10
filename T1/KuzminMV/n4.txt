@@ -1,0 +1,5 @@
+a = int(input("vvedite numb: "))
+b = list(str(q))
+b.reverse()
+for i in a:
+	print(i,end = "") 

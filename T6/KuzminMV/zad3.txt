@@ -1,0 +1,34 @@
+def my_empty(): 
+(tab)global A 
+(tab)res = False 
+(tab)if len(A)==0: 
+(tab)(tab)res = True 
+(tab)return res 
+
+def my_push(git): 
+(tab)global A 
+(tab)Q.append(git) 
+
+def my_pop(): 
+(tab)global A 
+(tab)Q.pop() 
+
+
+def my_size(): 
+(tab)global A 
+(tab)res = len(A) 
+(tab)return res 
+
+Q = list() 
+git = input("Vvedite: ") 
+hub = input("Vvedite: ") 
+my_push(git) 
+print (A) 
+my_push(hub) 
+print (A) 
+w = my_size() 
+print (w) 
+my_pop() 
+w = my_empty() 
+print(w) 
+print(A)

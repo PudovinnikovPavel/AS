@@ -1,0 +1,41 @@
+#include<iostream> 
+#include<array> 
+
+void func1(int* A) { 
+	for (std::size_t i = 0; i < 10; i++) { 
+		if (A[i] % 2 == 0) { 
+			A[i] *= 2; 
+			std::cout « A[i] « " "; 
+			} 
+		else 
+		{ 
+			A[i] -= 1; 
+			std::cout « A[i] « " "; 
+		} 
+	} 
+} 
+
+void func2(int a0, int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8, int a9) 
+{ 
+	if (a0%2==0) std::cout « a0*2 « " "; 
+	else std::cout « a0-1 « " "; 
+	if (a1%2==0) std::cout « a1*2 « " "; 
+	else std::cout « a1-1 « " "; 
+	if (a2%2==0) std::cout « a2*2 « " "; 
+	else std::cout « a2-1 « " "; 
+	if (a3%2==0) std::cout « a3*2 « " "; 
+	else std::cout « a3-1 « " "; 
+	if (a4%2==0) std::cout « a4*2 « " "; 
+	else std::cout « a4-1 « " "; 
+	if (a5%2==0) std::cout « a5*2 « " "; 
+	else std::cout « a5-1 « " "; 
+	if (a6%2==0) std::cout « a6*2 « " "; 
+	else std::cout « a6-1 « " "; 
+	if (a7%2==0) std::cout « a7*2 « " "; 
+	else std::cout « a7-1 « " "; 
+	if (a8%2==0) std::cout « a8*2 « " "; 
+	else std::cout « a8-1 « " "; 
+	if (a9%2==0) std::cout « a9*2 « " "; 
+	else std::cout « a9-1 « " "; 
+} 
+

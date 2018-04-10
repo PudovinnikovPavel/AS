@@ -1,0 +1,25 @@
+#include <iostream>
+#include <stack>
+
+int main()
+{
+	std::stack<int> w;
+	int b, a, otv;
+	std::cout << "Enter value: " << std::endl;
+	std::cin >> a;
+	std::cout << "Enter b: " << std::endl;
+ 	std::cin >> b;
+ 	while (a!=0)
+ 	{
+ 		otv = a%b;
+ 		a = int(a/b);
+ 		w.push(otv);
+ 	}
+ 	std::cout << "Otvet: ";
+ 	while (!w.empty())
+ 	{
+ 		std::cout << w.top();
+ 		w.pop();
+ 	}
+ 	return 0;
+}

@@ -1,0 +1,7 @@
+n = int(input("How many lists?: "))
+for i in range(n):
+	print()
+	a = input("list: ").split()
+	max = int(max(a))
+	for j in a:
+		print('%.2f' %float(int(j)/max), end= " ")
