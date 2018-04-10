@@ -1,0 +1,12 @@
+a = []  
+n = int(input("Введите кол-во списков: "))  
+for i in range(n):  
+    b = []
+    m = int(input("Кол-во элементов "+str(i+1)+" списка: : "))  
+    for l in range(m):  
+        c = int(input(str(l+1)+" элемент "+str(i+1)+" списка: "))
+        b.append(c)
+    for l in range(m):   
+        b[l] = b[l] / max(b)
+    a.append(b) 
+print(a)

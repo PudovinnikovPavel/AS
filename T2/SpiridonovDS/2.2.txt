@@ -1,0 +1,19 @@
+def arithmetic(a,b,c):
+    if (c=='+'): 
+	    d=a+b
+	    print(d)
+    elif (c=='-'):
+	    d=a-b
+	    print(d)
+    elif (c=='*'):
+	    d=a*b
+	    print(d)
+    elif (c=='/'):
+	    d=a/b
+	    print(d)
+    else:
+        print("Неизвестная операция")
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+c = input("Выбирите действие из списка: +,-,*,/: ")
+arithmetic(a,b,c)
